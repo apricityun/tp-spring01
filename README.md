@@ -1,6 +1,6 @@
 # tp-spring01
 ### **부산IT교육센터 팀프로젝트 1st : 스프링 프로젝트 - BusanIT Community**
-<br>
+<br><br>
 
 > #### **Description**
 <p>수업 또는 과목별로 자료를 제공할 수 있는 게시판, 
@@ -10,7 +10,7 @@
 
 > #### **Environment**
 SpringBoot, JSP,  MySQL, MyBatis, Ajax, Bootstrap
-<br>
+<br><br>
 
 > #### **Folders or Files**
 - DB File : DB Data
