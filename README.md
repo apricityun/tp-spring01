@@ -13,13 +13,13 @@ SpringBoot, JSP,  MySQL, MyBatis, Ajax, Bootstrap
 <br>
 
 > #### **Folders or Files**
-- AndroidProject_team4_plantalk_app : 안드로이드 스튜디오로 앱 구현
-- AndroidProject_team4_plantalk_mysql : DB data
-- AndroidProject_team4_plantalk_spring_server : 안드로이드 스튜디오와 MySQL 연결하기 위한 경유 서버
+- DB File : DB Data
+- spring : 웹 사이트 구현 코드
 <br>
 
 > #### **Usage**
 디비 스키마 생성 및 데이터 저장
-username & password : and4 & 1234
-schema name : travel_db
-SpringBoot Run As -> localhost:8083
+- MySQL 계정 로그인 및 스키마 생성
+ - username & password : sec & 1234
+- springBoot Run As  ->  localhost:8083
+
