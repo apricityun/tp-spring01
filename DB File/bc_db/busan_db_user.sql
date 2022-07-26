@@ -1,0 +1,54 @@
+-- MySQL dump 10.13  Distrib 8.0.28, for Win64 (x86_64)
+--
+-- Host: 127.0.0.1    Database: busan_db
+-- ------------------------------------------------------
+-- Server version	8.0.28
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `user`
+--
+
+DROP TABLE IF EXISTS `user`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `user` (
+  `username` varchar(45) NOT NULL,
+  `password` text NOT NULL,
+  `nickname` varchar(45) NOT NULL,
+  `role` varchar(45) NOT NULL,
+  `joindate` datetime DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `user`
+--
+
+LOCK TABLES `user` WRITE;
+/*!40000 ALTER TABLE `user` DISABLE KEYS */;
+INSERT INTO `user` VALUES ('admin','$2a$10$O97JOcnFbMdUXzW99LlksOqvU5i0O4B8OwwQP4fZsNqhWROFe8zj6','관리자','ADMIN','2022-04-01 14:48:31'),('blue','$2a$10$tVSih0X2.JsEOFCjpUslsO4Mkbd2S5VsuPesIYiaBQhpFOFn1i0SW','blue','STUDENT','2022-04-05 14:14:09'),('bsn','$2a$10$XYzJUmNxWaWPt6xPwRe1i.dmxn/6g/MrIHBPUtJ73X1unUIt/0aP.','승현','STUDENT','2022-04-07 16:22:16'),('ice','$2a$10$iTKgcWWPDr2IxWoGnM/AYORLu76xas.4NFngSTTA1Q6d3zySJ1oN.','ice','STUDENT','2022-04-05 14:13:36'),('latte','$2a$10$RaV1OgP3ROaIAM2Ky13nOOZis5jgDcQjcu2uOksl92l9CDswOHFL.','latte','MANAGER','2022-04-05 14:13:54'),('p','$2a$10$Y5MPJVzExfvw3SMFsBncSuKIkzRtEhOm54ETw11WmNAZ1KliEnrMO','pppp','STUDENT','2022-04-05 10:39:24'),('pgm','$2a$10$JR.fWB88VvDXpU3PJIK1/.pfd7rrwvQg9XGeCWDdoRJJiBaE37AnS','경미쌤','MANAGER','2022-04-06 15:13:37'),('pink','$2a$10$iNiCRZq.ESOKRhlX.Mjf3O7G6IDibYbtik2jvmv9oHD.nH0xmq10q','pink','STUDENT','2022-04-05 14:26:33'),('red','$2a$10$vakBZ6jbeNEhNXduWBwuiu.6in3HUz9FKC9CGjhb5xYY4Vuz3ZxW6','red','STUDENT','2022-04-05 14:14:25'),('team2','$2a$10$iWV5QaMtTey8IOkHrijWuupESpC7/7ODRoH7Dc1Qy21X7qUP9fAPa','세컨드팀','STUDENT','2022-04-07 15:28:53'),('user','$2a$10$bDTOzDyAmaINWRfNecgpFuOLDDxhg9ZALiLlggwS7AZJfZTxp.ReC','user','STUDENT','2022-04-01 14:49:54'),('yun','$2a$10$yMAyVZzbGb3F4GjX3HCT/O4jhPdJ/DL1wq0BUv14Fp8zXtt8bB/vy','7890','STUDENT','2022-04-01 14:48:31');
+/*!40000 ALTER TABLE `user` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2022-04-08 10:36:41
